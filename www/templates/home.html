@@ -1,12 +1,13 @@
 <!-- Home que lista os produtos -->
 
-<ion-view view-title="Bolos">
+<ion-view>
+	<ion-nav-title>Nossos Bolos</ion-nav-title>
 	<ion-content>
 		<ion-list>
-			<ion-item>Só de Cenoura</ion-item>
-			<ion-item>Com Nutella</ion-item>
-			<ion-item>Com Brigadeiro</ion-item>
-			<ion-item>Açucarado</ion-item>
+		    <ion-item ng-repeat="bolo in bolos">
+		        <h2>{{bolo.nome}}</h2>
+		        <p>apenas R$ {{bolo.preco}}</p>
+		    </ion-item>
 		</ion-list>
 	</ion-content>
 </ion-view>
