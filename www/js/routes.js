@@ -17,4 +17,10 @@ angular.module('starter').config(function($stateProvider, $urlRouterProvider) {
     controller: 'DetalheController'
   })
 
+  .state('pedido', {
+    url: '/pedido/:boloId',
+    templateUrl: 'templates/pedido.html',
+    controller: 'PedidoController'
+  })
+
 });
