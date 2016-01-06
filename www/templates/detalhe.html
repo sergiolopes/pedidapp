@@ -1,1 +1,13 @@
 <!-- Detalhes de um produto -->
+
+<ion-view>
+	<ion-nav-title>{{bolo.nome}}</ion-nav-title>
+	<ion-content>
+		<img ng-src="{{bolo.foto}}" class="detalhe-foto">
+		<p class="detalhe-descricao">{{bolo.descricao}}</p>
+
+		<a class="button button-positive button-full" href="#/pedido/{{bolo.id}}">
+			Pedir esse bolo agora
+		</a>
+	</ion-content>
+</ion-view>

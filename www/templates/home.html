@@ -4,10 +4,11 @@
 	<ion-nav-title>Nossos Bolos</ion-nav-title>
 	<ion-content>
 		<ion-list>
-		    <ion-item ng-repeat="bolo in bolos">
-		        <h2>{{bolo.nome}}</h2>
-		        <p>apenas R$ {{bolo.preco}}</p>
-		    </ion-item>
+			<ion-item ng-repeat="bolo in bolos" class="item-thumbnail-left" href="#/bolo/{{bolo.id}}">
+				<img ng-src="{{bolo.foto}}" style="object-fit: cover">
+				<h2>{{bolo.nome}}</h2>
+				<p>apenas R$ {{bolo.preco}} {{bolo.quantidade}}</p>
+			</ion-item>
 		</ion-list>
 	</ion-content>
 </ion-view>

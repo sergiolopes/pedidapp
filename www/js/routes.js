@@ -11,4 +11,10 @@ angular.module('starter').config(function($stateProvider, $urlRouterProvider) {
     controller: 'HomeController'
   })
 
+  .state('detalhe', {
+    url: '/bolo/:boloId',
+    templateUrl: 'templates/detalhe.html',
+    controller: 'DetalheController'
+  })
+
 });
